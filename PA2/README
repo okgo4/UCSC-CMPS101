@@ -1,0 +1,18 @@
+#Roy Wang #1636195 hwang167 PA2#
+################################
+Files:
+
+GraphProperties.c
+List.c
+List.h
+Graph.c
+Graph.h
+Makefile
+
+######################
+GraphProperties.c is the code execute the graph functions. 
+List.c is the implementation of List and Node structure.
+List.h is the header of List and Node structure.
+Graph.c is the implementation of Graph structure.
+List.h is the header of Graph structure.
+Makefile is altered makefile code for GraphProperties.

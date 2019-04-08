@@ -1,0 +1,44 @@
+#Roy Wang #1636195 hwang167 PA4#
+
+################################
+
+Files:
+
+
+
+DigraphProperties.c
+
+List.c
+
+List.h
+
+Digraph.c
+
+Digraph.h
+
+Makefile
+
+
+
+######################
+
+DigraphProperties.c is the code execute the graph functions. 
+
+List.c is the implementation of List and Node structure.
+
+List.h is the header of List and Node structure.
+
+Digraph.c is the implementation of Graph structure.
+
+Digraph.h is the header of Digraph structure.
+
+Makefile is altered makefile code for DigraphProperties.
+
+####################
+In my program, I use DFS to find the order of ending time in a directed graph and save the result in a List. 
+Then I create a new directed graph as the reversed graph of the original directd graph.
+As for SCCs, I use a List array to save them. I run DFS with the List order I got in the first DFS, result. Then I run seveal DFSs until all the elements in the result List is visited.
+Each time the DFS ends, the index number add 1 to save the next SCC into another element of List array.
+So the index shows GetCountSCC. 
+In GetNumSCCVertices we can find the index of List array with a vertex. Then I return the length of that List.
+In InSameSCC, I use the same method above to find two indexes and compare them. 

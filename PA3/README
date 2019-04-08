@@ -1,0 +1,29 @@
+#Roy Wang #1636195 hwang167 PA3#
+################################
+Files:
+
+DigraphProperties.c
+List.c
+List.h
+Digraph.c
+Digraph.h
+Makefile
+
+######################
+DigraphProperties.c is the code execute the graph functions. 
+List.c is the implementation of List and Node structure.
+List.h is the header of List and Node structure.
+Digraph.c is the implementation of Graph structure.
+Digraph.h is the header of Digraph structure.
+Makefile is altered makefile code for GraphProperties.
+
+####################
+in distance()
+I use BFS to find the distance between two vertices. I use a List as queue to append the Node into the List. After BFS, this function will output the least value of distance between two vertices.The complexity if O(m+n).
+
+in acyclic()
+I use for to go over all vertices and use BFS to check whether the vertices go back to themselves. So the complexity if O(m+n).
+
+
+in topoSort()
+Firstly I use acyclic to check whether the Digraph is acyclic or not. If not, I run DFS to go over all vertices and when I mark the vertices as all done. I prepend it to a List. After searching, I use printList to print the result. So the complexity if O(m+n).

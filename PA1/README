@@ -1,0 +1,16 @@
+Roy Wang  #1636195 PA1
+######################
+Files:
+
+InsertSortLinked.c
+List.c
+List.h
+ListClient.c
+Makefile
+
+######################
+InsertSortLinked.c is the code to sort a Linked List with InsertSort. 
+List.c is the implementation of List and Node structure.
+List.h is the header of List and Node structure.
+ListClient.c is the test code of List strucuture.
+Makefile is the makefile code which has not been altered. 
